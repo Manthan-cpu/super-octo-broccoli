@@ -7,9 +7,9 @@ module register_file(
     input [2:0] read_reg1,
     input [2:0] read_reg2,
     input [2:0] write_reg,
-    input [7:0] write_data,
-    output [7:0] read_data1,
-    output [7:0] read_data2
+    input signed [7:0] write_data,
+    output signed [7:0] read_data1,
+    output signed [7:0] read_data2
     );
     
     reg [7:0] regfile [7:0];
